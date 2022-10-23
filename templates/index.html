@@ -8,8 +8,12 @@
 </head>
 <body>
   <main>
-    <h1>Page index</h1>
-    <p>Welcome to index page!</p>
+    <h1>{{ var }}</h1>
+    <form action="{{ url_for('index') }}" method="post">
+      <label for="">Número:</label><br>
+      <input type="text" name="name" placeholder="Insira um número">
+      <button>Enviar</button>
+    </form>
   </main>
 </body>
 </html>
